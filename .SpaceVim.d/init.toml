@@ -23,6 +23,9 @@
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
+    # bootstrap with wrap
+    bootstrap_after = "wrap#after"
+    autocomplete_parens = false
 
 # Enable autocomplete layer
 [[layers]]
@@ -36,10 +39,11 @@ default_position = 'top'
 default_height = 30
 
 [[layers]]
-  name = "lang#c"
+name = "lang#c"
+clang_flag = ['-DLOCAL_JUDGE']
 
 [[layers]]
-  name = "lang#go"
+name = "lang#go"
 
 [[layers]]
 name = "lsp"
@@ -49,3 +53,6 @@ filetypes = [
   "go",
   "sh"
 ]
+
+[[layers]]
+name = "debug"
